@@ -3,5 +3,71 @@
 }
 
 body {
-    background-color: #20262E;
+    margin: 0;
+    background-color: #222831;
+}
+
+div.navbar {
+    position: sticky;
+    width: 10%;
+    top: 0px;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #222831;
+}
+
+
+.navbar li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: EEEEEE;
+    background-color: #393E46;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* .content {
+    background-color: #7F167F;
+    height: 400px;
+    width: 23%;
+    margin-top: 20px;
+    margin: 20px 1% 20px 1%;
+    float: left;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .content {
+        width: 31.33%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .content {
+        width: 48%;
+    }
+}
+*/
+@media screen and (max-width: 600px) {
+    .navbar div {
+        width: 100%;
+    }
+    .navbar li {
+        float: left;
+    }
+    .navbar li a {
+        text-align: center;
+    }
 }
