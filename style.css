@@ -9,9 +9,12 @@ body {
 
 div.navbar {
     position: sticky;
-    width: 10%;
+    top: 0;
+    width: 15%;
+    height: 1000px;
     top: 0px;
     overflow: hidden;
+    float: left;
 }
 
 .navbar ul {
@@ -31,22 +34,32 @@ div.navbar {
 }
 
 .navbar li a:hover {
-    color: EEEEEE;
+    color: #EEEEEE;
     background-color: #393E46;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
-/* .content {
-    background-color: #7F167F;
-    height: 400px;
-    width: 23%;
-    margin-top: 20px;
-    margin: 20px 1% 20px 1%;
+/*Content section*/
+
+div.content {
     float: left;
-    text-align: center;
+    padding-left: 14px;
+    margin: 0 14px 14px 14px;
+    width: 83%;
+    background-color: #393E46;
+    color:white;
+    border-radius: 5px;
 }
 
+.content img{
+    float: left;
+    height: 200px;
+    width: auto;
+    margin: 0px 14px 14px 0px;
+}
+
+/*
 @media screen and (max-width: 1200px) {
 
     .content {
