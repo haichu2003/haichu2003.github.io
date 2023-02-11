@@ -67,6 +67,7 @@ div.navbar {
     float: right;
     margin: 0;
     padding: 14px 16px;
+    visibility: hidden;
 }
 
 .navbar .headerImage img {
@@ -89,7 +90,7 @@ div.navbar {
         visibility: hidden;
     }
 
-    .navbar ul {
-        visibility: collapse;
+    .navbar picture.headerImage {
+        visibility: visible;
     }
 }
