@@ -1,5 +1,6 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    color: white;
 }
 
 body {
@@ -8,13 +9,25 @@ body {
 }
 
 div.navbar {
+    height: auto;
     position: sticky;
-    top: 0;
-    width: 15%;
-    height: 1000px;
     top: 0px;
+    margin: 0;
     overflow: hidden;
+}
+
+.navbar .home h2 {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.navbar a.home {
+    display: block;
+
     float: left;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .navbar ul {
@@ -22,66 +35,54 @@ div.navbar {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    float: left;
+    width: 80%;
     background-color: #222831;
 }
 
-
-.navbar li a {
+.navbar li a.headerLink {
     display: block;
-    color: white;
-    padding: 14px 16px;
+    float: left;
+    padding: 20px 16px 14px 16px;
     text-decoration: none;
+    visibility: visible;
 }
 
-.navbar li a:hover {
-    color: #EEEEEE;
-    background-color: #393E46;
+.navbar .headerLink h3 {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.navbar li a.headerLink:hover {
+    background-color: #393e46;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
+.navbar picture.headerImage {
+    float: right;
+    margin: 0;
+    padding: 14px 16px;
+}
+
+.navbar .headerImage img {
+    max-height: 30px;
+    max-width: 30px;
+}
+
+#headerLink1,
+#headerLink2,
+#headerLink3 {
+    visibility: visible;
+}
+
 /*Content section*/
 
-div.content {
-    float: left;
-    padding-left: 14px;
-    margin: 0 14px 14px 14px;
-    width: 83%;
-    background-color: #393E46;
-    color:white;
-    border-radius: 5px;
-}
-
-.content img{
-    float: left;
-    height: 200px;
-    width: auto;
-    margin: 0px 14px 14px 0px;
-}
-
-/*
-@media screen and (max-width: 1200px) {
-
-    .content {
-        width: 31.33%;
+@media screen and (max-width: 800px) {
+    #headerLink1,
+    #headerLink2,
+    #headerLink3 {
+        visibility: hidden;
     }
 }
-
-@media screen and (max-width: 900px) {
-
-    .content {
-        width: 48%;
-    }
-}
-*/
-/* @media screen and (max-width: 600px) {
-    .navbar div {
-        width: 100%;
-    }
-    .navbar li {
-        float: left;
-    }
-    .navbar li a {
-        text-align: center;
-    }
-} */
