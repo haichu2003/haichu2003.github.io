@@ -1,1 +1,10 @@
-image/Screenshot 2022-08-28 081656.png
+_site
+.DS_Store
+.jekyll
+.jekyll-metadata
+.bundle
+.sass-cache
+Gemfile
+Gemfile.lock
+node_modules
+package.json
